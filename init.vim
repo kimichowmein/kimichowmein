@@ -21,6 +21,10 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " flash.nvim
 Plug 'folke/flash.nvim'
 
+Plug 'preservim/nerdtree'
+
+Plug 'terryma/vim-multiple-cursors'
+
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 
@@ -34,7 +38,10 @@ set autoindent
 set shiftwidth=2
 
 " Set font
-set guifont=JetBrains\ Mono\ NL:h14
+set guifont=JetBrains\ Mono\ NL:h13
+
+" Line height
+set linespace=1
 
 " Set line numbers
 set relativenumber
@@ -54,6 +61,14 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+
+" NERDTree remaps
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+
+autocmd VimEnter * NERDTree | wincmd p
 
 
 " Auto close tags
