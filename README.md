@@ -7,7 +7,9 @@ to change, iterate and improve over time.
 ## What I'm using
 
 [Starship](https://starship.rs/) - Shell customization
+
 [Neovim](https://neovim.io/) - Text and code editing (WIP)
+
 [Tmux](https://github.com/tmux/tmux/wiki) - Terminal multiplexer (WIP)
 
 ### Config files
